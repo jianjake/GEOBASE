@@ -24,5 +24,5 @@ Which rivers run through states that border the state whose capital is Austin?
 源于: Visual Prolog 5.2 Personal Edition  VPI\PROGRAMS\GEOBASE
 
 效果：
-![这里写图片描述](
-https://github.com/jianjake/GEOBASE/blob/master/pic.bmp)
+![image](https://github.com/jianjake/GEOBASE/blob/master/pic.png)
+
