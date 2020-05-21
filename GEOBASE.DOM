@@ -1,0 +1,19 @@
+/******************************************************************************
+
+		Copyright (c) 1984 - 2000 Prolog Development Center A/S
+
+ ModuleName:
+ FileName: GEOBASE.DOM
+ PURPOSE: Domain definitions for GEOBASE
+ Written by: Eugene Akimov
+ Comments:
+
+******************************************************************************/
+
+GLOBAL DOMAINS
+
+  ENT 	= STRING	/* Names of entities                    */
+  ASSOC = STRING	/* Names of associations                */
+  RELOP = STRING 	/* gt, lt, eq for comparisons           */
+  UNIT  = STRING        /* kilometers, citizens etc.            */
+  ROW   = INTEGER  	/* used in listlen */

@@ -1,0 +1,28 @@
+[OPTIONS]
+WARNING=3
+REPORT=ON
+ROOT=D:\SoftWare\vip\VPI\PROGRAMS\GEOBASE\OBJ32
+BMROOT=D:\SoftWare\vip\VPI\PROGRAMS\GEOBASE\RES\WIN
+ERRORLOG=D:\SoftWare\vip\VPI\PROGRAMS\GEOBASE\OBJ32\HLPBUGS.TXT
+COPYRIGHT=Built using PDC helpmaker
+CITATION=Built using PDC helpmaker
+TITLE=GEOBASE
+COMPRESS=false
+CONTENTS=idh_Contents
+
+[FILES]
+D:\SoftWare\vip\VPI\PROGRAMS\GEOBASE\OBJ32\GEOBASE.RTF
+[WINDOWS]
+main=,(32,32,768,768),0,(255,255,255),(192,192,192),0
+[CONFIG]
+
+
+[MAP]
+idh_Contents 1
+idh_Tutorial 2
+idh_Scheme 3
+idh_Names 4
+idh_Units_for_attributes 5
+idh_Words_stating_minimums 6
+idh_Words_stating_maximums 7
+idh_Alternaties_for_relation_operators 8

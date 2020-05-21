@@ -1,0 +1,8 @@
+map("idh_Contents",1)
+map("idh_Tutorial",2)
+map("idh_Scheme",3)
+map("idh_Names",4)
+map("idh_Units_for_attributes",5)
+map("idh_Words_stating_minimums",6)
+map("idh_Words_stating_maximums",7)
+map("idh_Alternaties_for_relation_operators",8)

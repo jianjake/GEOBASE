@@ -1,0 +1,12 @@
+
+DESCRIPTION 'Visual Prolog Windows application'
+EXETYPE WINDOWS ; required for all Windows applications
+PROTMODE	; Visual Prolog run in protected mode only
+
+; Generates error message if application is started without Windows
+;STUB 'C:\WINDEV\WINSTUB.EXE'
+
+HEAPSIZE 20000	; Local heap used by edit controls in the VPI
+STACKSIZE 15000	; Size depends on the application
+		; When INIT.OBJ used, stack always set to 64K
+		; The value only used when linking to C !

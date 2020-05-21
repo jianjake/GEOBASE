@@ -1,0 +1,18 @@
+/*****************************************************************************
+
+		Copyright (c) 1984 - 2000 Prolog Development Center A/S
+
+ Project:  GEOBASE
+ FileName: GEOBASE.PRE
+ Purpose: Predicate definitions for GEOBASE.PRO
+ Written by: Eugene Akimov
+ Comments:
+******************************************************************************/
+
+%BEGIN_DECL, System generated global predicates
+GLOBAL PREDICATES
+
+  project_ShowHelpContext(INTEGER Index) - (i)
+  dlg_about_dialog_Create(WINDOW Parent) - (i)
+  dlg_geobase_Create(WINDOW Parent) - (i)
+%END_DECL

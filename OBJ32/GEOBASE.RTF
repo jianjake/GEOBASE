@@ -1,0 +1,244 @@
+{\rtf1\ansi \deff11{\fonttbl{\f1\froman Times New Roman;}{\f2\fscript Script;}{\f3\froman Roman;}{\f4\fmodern Courier;}{\f5\fswiss Arial;}{\f6\fswiss Helv;}{\f7\fnil Wingdings;}{\f8\froman Symbol;}{\f9\fmodern System Fixed;}{\f10\fswiss Helv;}{\f11\fswiss MS Sans Serif;}}
+{\stylesheet
+{\s242\tqc\tx4252\tqr\tx8504 \f11\fs20\sbasedon0\snext242 footer;}
+{\s244 \f11\fs20\up6 \sbasedon0\snext0 footnote reference;}
+{\s245 \f11\fs12 \sbasedon0\snext245 footnote text;}
+{\f11\fs20 \snext0 Normal;}}
+{\info
+{\creatim\yr2020\mo5\dy16\hr23\min19}
+{\revtim\yr2020\mo5\dy16\hr23\min19}
+{\version1}{\edmins40}{\nofpages1}{\nofwords0}{\nofchars0}{\vern16504}}
+\paperw11909\paperh16834\margl1440\margr1800\margt1440\margb1440\gutter0 \deftab720\widowctrl\ftnbj \sectd \linex0\headery709\footery709\colsx709\endnhere\titlepg
+{\footer \pard\plain \s242\qr\tqc\tx4252\tqr\tx8504 \f11\fs20{\field{\*\fldinst PAGE}{\fldrslt}} }\pard\plain \f11\fs20
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Contents}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Contents}}
+\pard \f11\fs20 \pard \qc Natural language interface to U.S. geography.
+\par \pard \ql 
+\par   {\uldb Tutorial}{\v idh_Tutorial  }
+\par   {\uldb Scheme for the entity network}{\v idh_Scheme  }
+\par   {\ul Names of entities}{\v idh_Names  }
+\par   {\ul Units for attributes}{\v idh_Units_for_attributes  }
+\par   {\ul Alternaties for relation operators}{\v idh_Alternaties_for_relation_operators  }
+\par   {\ul Words stating maximums}{\v idh_Words_stating_maximums  }
+\par   {\ul Words stating minimums}{\v idh_Words_stating_minimums  }
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Tutorial}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Tutorial}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Tutorial}}
+\pard \f11\fs20 \pard \qc Tutorial
+\par \pard \ql 
+\par Geobase demonstrates a natural language interface to a database
+\par on U.S. geography. Geobase allows you to query its database in
+\par English rather than computerese.  For a more complete discussion 
+\par of Geobase and its features please refer to Appendix F in the 
+\par Reference Guide.
+\par 
+\par The database contains the following information:
+\par 
+\par Information about states:
+\par   Area of the state in square kilometers
+\par   Population of the state in citizens
+\par   Capital of the state
+\par   Which states border a given state
+\par   Rivers in the state
+\par   Cities in the state
+\par   Highest and lowest point in the state in meters
+\par 
+\par Information about rivers:
+\par   Length of river in kilometers
+\par 
+\par Information about cities:
+\par   Population of the city in citizens
+\par 
+\par 
+\par You can retrieve any or all of this information by asking questions
+\par in normal English. Some sample queries:
+\par 
+\par    - states
+\par 
+\par    - give me the cities in california.
+\par 
+\par    - what is the biggest city in california ?
+\par 
+\par    - what is the longest river in the usa?
+\par 
+\par    - which rivers are longer than 1 thousand kilometers?
+\par 
+\par    - what is the name of the state with the lowest point ?
+\par 
+\par    - which states border alabama ?
+\par 
+\par    - which rivers do not run through texas
+\par 
+\par    - which rivers run through states that border the state
+\par      with the capital austin?
+\par 
+\par 
+\par You can modify Geobase as you work with it. If it doesn't
+\par understand a word in one of your questions, you can add the word
+\par to the language definition. The language is defined in a number
+\par of relations, the most important one being the schema. A schema
+\par is a description of the logical structure of a database. In
+\par Geobase, the schema is the "entity network" for the language. A
+\par schema entry follows the form: ENTITY ASSOCIATION ENTITY; this
+\par signifies that the two entities are bound together by the given
+\par association.
+\par 
+\par To display the relations and their schema, select View Language
+\par from the Geobase main menu, then choose one of the items listed
+\par below.
+\par 
+\par 
+\par  1. Schema of relations
+\par 
+\par     The geographic data is stored in a number of relations. The
+\par     schema for these relations is listed here.
+\par 
+\par  2. Schema of questions
+\par 
+\par     The schema for all possible questions that can be asked is listed
+\par     here. For example, one possibility is:
+\par 
+\par     > population  of  city <
+\par 
+\par     That is, what is the population of a given city?
+\par 
+\par  3. Names of entities
+\par 
+\par     All known entities are listed here.
+\par 
+\par  4. Synonyms for entities
+\par 
+\par     Synonyms for entities are allowed. The previously defined
+\par     synonyms are listed here; you can also add synonyms to the
+\par     database dynamically.
+\par 
+\par  5. Synonyms for associations
+\par 
+\par     Synonyms for associations are allowed and can consist of
+\par     more than one word.
+\par 
+\par  6. Words that are ignored
+\par 
+\par     Some words are simply ignored by the system since they are not
+\par     directly relevant to the meaning of questions. Ignored words are
+\par     listed here.
+\par 
+\par  7. Units for entities
+\par 
+\par     The units of measure for different entities are listed here. For
+\par     instance, the unit for population is "number of citizens".
+\par 
+\par  8. Synonyms for relational operators
+\par 
+\par     There are several ways to say that a city is "bigger than" 1 million
+\par     citizens or that a river is "shorter than" 1 thousand miles. These
+\par     synonyms are listed here.
+\par 
+\par  9. Alternative ways to designate the minimum
+\par 
+\par     The different ways to designate adjectives for "minimum" are listed here.
+\par 
+\par 10. Alternative ways to designate the maximum
+\par 
+\par     The different ways to designate adjectives for "maximum" are listed here.
+\par 
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Scheme}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Scheme}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Scheme}}
+\pard \f11\fs20 \pard \qc Scheme for the entity network
+\par \pard \ql 
+\par 
+\par    1. abbreviation of state
+\par    2. capital of state
+\par    3. state with capital
+\par    4. population of state
+\par    5. area of state
+\par    6. city in state
+\par    7. state with city
+\par    8. population of city
+\par    9. population of capital
+\par   10. length of river
+\par   11. state with river
+\par   12. river in state
+\par   13. state border state
+\par   14. point in state
+\par   15. state with point
+\par   16. height of point
+\par   17. mountain in state
+\par   18. state with mountain
+\par   19. height of mountain
+\par   20. lake in state
+\par   21. state with lake
+\par   22. area of lake
+\par   23. state with road
+\par   24. road in state
+\par   25. name of river
+\par   26. name of capital 
+\par   27. name of city
+\par   28. name of state
+\par   29. name of point
+\par   30. name of mountain
+\par   31. name of lake
+\par   32. name of road
+\par   33. river in continent
+\par   34. city in continent
+\par   35. capital in continent
+\par   36. state in continent
+\par   37. point in continent
+\par   38. mountain in continent
+\par   39. lake in continent
+\par   40. road in continent
+\par 
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Names}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Names}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Names}}
+\pard \f11\fs20 name
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Units_for_attributes}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Units for attributes}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Units for attributes}}
+\pard \f11\fs20    \b Entity       Units\b0 
+\par   population  citizens
+\par   area        square kilometers
+\par   length      kilometers
+\par   height      meters
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Words_stating_minimums}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Words stating minimums}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Words stating minimums}}
+\pard \f11\fs20 smallest  shortest  minimum  least
+\par smaller  lowest
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Words_stating_maximums}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Words stating maximums}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Words stating maximums}}
+\pard \f11\fs20 greatest  largest  biggest  maximum
+\par longest  hightest
+\par\pard\plain\page
+
+{\up6 #{\footnote\pard\plain\s245 {\up6 #}idh_Alternaties_for_relation_operators}}
+{\up6 ${\footnote\pard\plain\s245 {\up6 $}Alternaties for relation operators}}
+{\up6 K{\footnote\pard\plain\s245 {\up6 K} Alternaties for relation operators}}
+\pard \f11\fs20 \b Names of relational operators\b0 
+\par lt: under
+\par lt: less than
+\par lt: shorter than
+\par lt: smaller than
+\par gt: more than
+\par gt: longer than
+\par gt: greatest than
+\par gt: bigger than
+\par gt: above
+\par gt: over
+\par\pard\plain\page
+}
